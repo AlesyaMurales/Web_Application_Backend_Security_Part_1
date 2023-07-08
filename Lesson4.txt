@@ -1,0 +1,23 @@
+Задание 1: Найдите в ВМ Metasploitable 3 (Linux) адрес страницы Login Page проекта 
+Continuum (предварительно отключите межсетевой экран командой iptables -F, затем 
+перезапустите continuum командой service continuum restart), который запущен на одном из 
+кастомных портов. В ответе укажите адрес страницы.
+
+/etc/init/continuum
+
+
+
+
+Задание 2: Какой сервис запущен на порту 6697 в ВМ Metasploitable 3 (Linux)?
+
+Nmap -sV 192.168.56.11 -p6697
+Irc.TestIRC.net
+
+
+
+
+Задание 3: Какой пароль пользователя tim из проекта mutillidae? В каком файле он 
+содержится?
+
+Lamaster53
+localhost/passwords/accounts.txt (запускается из docker-compose)
